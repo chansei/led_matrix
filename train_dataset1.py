@@ -17,7 +17,7 @@ response_json = response.json()
 # "odpt:railway"が"odpt.Railway:JR-East.ChuoRapid"のものだけ取得
 response_json = [x for x in response_json if x["odpt:railway"] == "odpt.Railway:JR-East.ChuoRapid"]
 
-result = []
+timetable_station = dict()
 
 # 検索条件
 calendar = "odpt.Calendar:Weekday"  # Weekday or SaturdayHoliday
@@ -27,6 +27,7 @@ for timetable in response_json:
     train = timetable["odpt:train"]
     trainNumber = timetable["odpt:trainNumber"]
     destination = timetable["odpt:destinationStation"]
+    trainType = timetable["odpt:trainType"]
 
     if calendar not in timetable["odpt:calendar"] or direction not in timetable["odpt:railDirection"]:
         continue
@@ -34,23 +35,27 @@ for timetable in response_json:
     for stop in timetable["odpt:trainTimetableObject"]:
         try:
             if stop["odpt:departureStation"] == "odpt.Station:JR-East.ChuoRapid.HigashiKoganei":
-                result.append({"odpt:departureTime": stop["odpt:departureTime"], "odpt:train": train, "odpt:trainNumber": trainNumber, "odpt:destinationStation": destination})
+                departureTime = stop["odpt:departureTime"]
+                if departureTime < "04:00":  # 4:00以前の場合は24時間表記に変換
+                    departureTime = str(int(departureTime[:2])+24) + departureTime[2:]
+                timetable_station[trainNumber] = [departureTime, train, trainType, destination[0]]
         except:
             pass
 
-result = sorted(result, key=lambda x: x["odpt:departureTime"])
+timetable_station = dict(sorted(timetable_station.items(), key=lambda x: x[1][0]))
 
 # 結果の出力
-# print(result)
+# print(timetable_station)
 
 # 現在時刻より後ろの3本を取得
 now = datetime.now()
 now = now.strftime("%H:%M")
-result = [x for x in result if x["odpt:departureTime"] > now]
-result = result[:3]
-# print(result)
-
-TrainNumbers = [x["odpt:trainNumber"] for x in result]
+# 現在時刻が4:00以前の場合は24時間表記に変換
+if now < "04:00":
+    now = str(int(now[:2])+24) + now[2:]
+filtered_timeTable = {k: v for k, v in timetable_station.items() if v[0] >= now}
+filtered_timeTable = dict(list(filtered_timeTable.items())[:3])
+current_trainNumber = list(filtered_timeTable.keys())
 
 response = requests.get(url_Train)
 print(response.status_code)
@@ -59,7 +64,7 @@ response_json = response.json()
 # odpt:trainNumberがTrainNumbersに含まれるものだけ取得
 # response_json = [x for x in response_json if x["odpt:trainNumber"] in TrainNumbers]
 
-result = []
+positions = []
 for train_info in response_json:
     if direction not in train_info["odpt:railDirection"]:
         continue
@@ -68,17 +73,41 @@ for train_info in response_json:
         "odpt:trainNumber": train_info["odpt:trainNumber"],
         "odpt:delay": train_info["odpt:delay"],
         "odpt:carComposition": train_info["odpt:carComposition"],
+        "odpt:trainType": train_info["odpt:trainType"],
+        "odpt:destinationStation": train_info["odpt:destinationStation"][0],  # リスト形式
         "odpt:toStation": train_info.get("odpt:toStation", None),
         "odpt:fromStation": train_info.get("odpt:fromStation", None)
     }
-    result.append(extracted_info)
+    positions.append(extracted_info)
+
+# TrainTypeが"odpt.TrainType:JR-East.Rapid”のものだけ取得
+positions = [x for x in positions if x["odpt:trainType"] == "odpt.TrainType:JR-East.Rapid"]
 
 stations = [
     "odpt.Station:JR-East.ChuoRapid.HigashiKoganei",
     "odpt.Station:JR-East.ChuoRapid.MusashiKoganei",
     "odpt.Station:JR-East.ChuoRapid.Kokubunji",
-    "odpt.Station:JR-East.ChuoRapid.NishiKokubunji"
+    "odpt.Station:JR-East.ChuoRapid.NishiKokubunji",
+    "odpt.Station:JR-East.ChuoRapid.Kunitachi",
+    "odpt.Station:JR-East.ChuoRapid.Tachikawa",
+    "odpt.Station:JR-East.Ome.Tachikawa"
 ]
+
+# 近辺の列車のみ取得
+near_positions = [x for x in positions if x["odpt:fromStation"] in stations[1:]]
+near_positions = sorted(near_positions, key=lambda x: stations.index(x["odpt:fromStation"]))
+
+# odpt:trainNumberをリストアップ
+positions_trainNumber = [x["odpt:trainNumber"] for x in near_positions]
+
+# 時刻表に基づくリストと結合，重複は無視
+trainNumber_result = list(set(current_trainNumber) | set(positions_trainNumber))
+print(trainNumber_result)
+
+# 発車票に表示する要素の整理
+for train in trainNumber_result:
+    print(train["odpt:trainNumber"])
+
 
 stations_name = [
     "東小金井",
