@@ -95,16 +95,37 @@ stations = [
 
 # 近辺の列車のみ取得
 near_positions = [x for x in positions if x["odpt:fromStation"] in stations[1:]]
-near_positions = sorted(near_positions, key=lambda x: stations.index(x["odpt:fromStation"]))
+near_positions = sorted(near_positions, key=lambda x: stations.index(x["odpt:fromStation"]))  # 近い順にソート
 
 # odpt:trainNumberをリストアップ
 positions_trainNumber = [x["odpt:trainNumber"] for x in near_positions]
 
+# current_trainNumberとpositions_trainNumberの和と差を取得
+set_trainNumber = list(set(current_trainNumber) | set(positions_trainNumber))
+diff_trainNumber = list(set(current_trainNumber) - set(positions_trainNumber))
+# diff_trainNumberの時刻表情報をstation_timetableから抽出
+filtered_data = {key: timetable_station[key] for key in diff_trainNumber if key in timetable_station}
+# filtered_timeTableとfiltered_dataを連結
+timetable_station.update(filtered_data)
+
+# timetable_stationをpositions_trainNumberの順に並び替える
+# 元のtimeTable_stationは時刻表通りに並んでいるはず
+# そのため，positions_trainNumberに含まれる列車番号が先頭に来るように並び替える，それ以外は末尾にまとめる
+current_timetable_station = dict(sorted(timetable_station.items(), key=lambda x: x[0] not in positions_trainNumber))
+
+# ここまでで近辺の位置情報をもとに直近の時刻情報を取得
+# 遅れの情報を取得
+
+# positionsからset_trainNumberを検索しdelayを取得
+
+
 # 時刻表に基づくリストと結合，重複は無視
 trainNumber_result = list(set(current_trainNumber) | set(positions_trainNumber))
-print(trainNumber_result)
+print(trainNumber_result)  # 時刻表+近辺位置の列車番号
 
 # 発車票に表示する要素の整理
+
+
 for train in trainNumber_result:
     print(train["odpt:trainNumber"])
 
