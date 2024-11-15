@@ -3,6 +3,7 @@ import requests
 import os
 import json
 from datetime import datetime
+from itertools import islice
 
 key = "bbmjpswmz5f1sgekikb41ei95lvaact4vbcb8mh6invm7ja8wr4j9g6psfyja9ly"
 
@@ -22,6 +23,7 @@ timetable_station = dict()
 # 検索条件
 calendar = "odpt.Calendar:Weekday"  # Weekday or SaturdayHoliday
 direction = "odpt.RailDirection:Inbound"  # Inbound or Outbound
+line = "odpt.Railway:JR-East.ChuoRapid"
 
 for timetable in response_json:
     train = timetable["odpt:train"]
@@ -66,7 +68,7 @@ response_json = response.json()
 
 positions = []
 for train_info in response_json:
-    if direction not in train_info["odpt:railDirection"]:
+    if train_info["odpt:railDirection"] !=  direction or train_info["odpt:railway"] != line:
         continue
 
     extracted_info = {
@@ -80,7 +82,7 @@ for train_info in response_json:
     }
     positions.append(extracted_info)
 
-# TrainTypeが"odpt.TrainType:JR-East.Rapid”のものだけ取得
+# TrainTypeが"odpt.TrainType:JR-East.Rapid”のものだけにフィルター
 positions = [x for x in positions if x["odpt:trainType"] == "odpt.TrainType:JR-East.Rapid"]
 
 stations = [
@@ -91,6 +93,13 @@ stations = [
     "odpt.Station:JR-East.ChuoRapid.Kunitachi",
     "odpt.Station:JR-East.ChuoRapid.Tachikawa",
     "odpt.Station:JR-East.Ome.Tachikawa"
+]
+
+stations_name = [
+    "東小金井",
+    "武蔵小金井",
+    "国分寺",
+    "西国分寺"
 ]
 
 # 近辺の列車のみ取得
@@ -106,76 +115,57 @@ diff_trainNumber = list(set(current_trainNumber) - set(positions_trainNumber))
 # diff_trainNumberの時刻表情報をstation_timetableから抽出
 filtered_data = {key: timetable_station[key] for key in diff_trainNumber if key in timetable_station}
 # filtered_timeTableとfiltered_dataを連結
-timetable_station.update(filtered_data)
+filtered_timeTable.update(filtered_data)
 
 # timetable_stationをpositions_trainNumberの順に並び替える
 # 元のtimeTable_stationは時刻表通りに並んでいるはず
 # そのため，positions_trainNumberに含まれる列車番号が先頭に来るように並び替える，それ以外は末尾にまとめる
-current_timetable_station = dict(sorted(timetable_station.items(), key=lambda x: x[0] not in positions_trainNumber))
+current_timetable_station = dict(sorted(filtered_timeTable.items(), key=lambda x: x[0] not in positions_trainNumber))
 
-# ここまでで近辺の位置情報をもとに直近の時刻情報を取得
+# print(current_timetable_station)
+
 # 遅れの情報を取得
+filtered_delay = {item['odpt:trainNumber']: item['odpt:delay'] for item in positions if item['odpt:trainNumber'] in set_trainNumber[:3]}
 
-# positionsからset_trainNumberを検索しdelayを取得
+# 現在位置を取得
+# 列車番号ごとに処理
+filtered_position = dict()
+station_index = {station: idx for idx, station in enumerate(stations[:4])}
+for train_number in set_trainNumber:
+    # 該当する列車情報を検索
+    train_data = next((item for item in positions if item['odpt:trainNumber'] == train_number), None)
+    
+    if train_data:
+        from_station = train_data['odpt:fromStation']
+        to_station = train_data['odpt:toStation']
+        
+        # (A) fromStationまたはtoStationがstationsリストに含まれていない場合はNone
+        if from_station not in station_index and to_station not in station_index:
+            filtered_position[train_number] = None
+        else:
+            # (B) toStationがNoneならfromStationに停車中として計算
+            if to_station is None and from_station in station_index:
+                position = 2 * station_index[from_station]
+            # (C) toStationに向かっている途中として計算
+            elif to_station in station_index:
+                position = 2 * station_index[to_station] + 1
+            else:
+                position = None
 
+            filtered_position[train_number] = position
+    else:
+        filtered_position[train_number] = None  # 列車情報が存在しない場合
 
-# 時刻表に基づくリストと結合，重複は無視
-trainNumber_result = list(set(current_trainNumber) | set(positions_trainNumber))
-print(trainNumber_result)  # 時刻表+近辺位置の列車番号
+for k, v in current_timetable_station.items():
+    v.append(filtered_delay.get(k, 0))
+    v.append(filtered_position.get(k, None))
 
-# 発車票に表示する要素の整理
+print(current_timetable_station)
 
-
-for train in trainNumber_result:
-    print(train["odpt:trainNumber"])
-
-
-stations_name = [
-    "東小金井",
-    "武蔵小金井",
-    "国分寺",
-    "西国分寺"
-]
-
-# 各駅の位置情報を格納する辞書
-train_position = [[] for _ in range(2*len(stations)-1)]
-
-# 列車の位置を整理
-for train in result:
-    train_number = train["odpt:trainNumber"]
-    delay = int(train["odpt:delay"]/60)
-    to_station = train.get("odpt:toStation", None)
-    from_station = train.get("odpt:fromStation", None)
-
-    # 駅間を走行中
-    if to_station in stations:
-        station_index = stations.index(to_station)
-        if station_index < len(stations):
-            train_position[station_index+1].append((train_number, delay))
-
-    # 駅に停車中
-    elif from_station in stations:
-        station_index = stations.index(from_station)
-        # 最後の駅～表示外の駅間を確認するためto_stationが存在するか確認
-        if not to_station:
-            train_position[station_index].append((train_number, delay))
-
-print(train_position)
-
-# 結果の出力
-for i, trains in enumerate(train_position):
-    line = ""
-    if i % 2 == 0:
-        line += stations_name[int(i/2)]
-        for train in train_position[i]:
-            line += f" {train[0]}(遅れ{train[1]}分)"
-    elif i % 2 == 1:
-        line += "｜"
-        for train in train_position[i]:
-            line += f" {train[0]}(遅れ{train[1]}分)"
-    print(line)
-
-
-# # 整形して保存
-# with open('train.json', 'w') as f:
-#     json.dump(response_json, f)
+for train in dict(islice(current_timetable_station.items(), 3)).values():
+    print(train[0], train[1].split(".")[-1], train[2].split(".")[-1], train[3].split(".")[-1], "遅れ"+str(train[4])+"分")
+    if train[5] is not None:
+        if train[5] % 2 == 0:
+            print(f"->{stations_name[int(train[5]/2)]}駅に停車中です")
+        else:
+            print(f"->{stations_name[int((train[5]+1)/2)]}駅を発車しました")
