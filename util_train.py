@@ -1,10 +1,11 @@
-import requests
+import urequests as requests
+# import requests
 import json
 
 KEY = "bbmjpswmz5f1sgekikb41ei95lvaact4vbcb8mh6invm7ja8wr4j9g6psfyja9ly"
 
-URL_TIMETABLE = "https://api-challenge2024.odpt.org/api/v4/odpt:TrainTimetable?odpt:operator=odpt.Operator:JR-East&acl:consumerKey=" + KEY
-URL_POSITION = "https://api-challenge2024.odpt.org/api/v4/odpt:Train?odpt:operator=odpt.Operator:JR-East&acl:consumerKey=" + KEY
+URL_TIMETABLE = "https://api-challenge2024.odpt.org/api/v4/odpt:StationTimetable?acl:consumerKey=" + KEY
+URL_POSITION = "https://api-challenge2024.odpt.org/api/v4/odpt:Train?acl:consumerKey=" + KEY
 
 CALENDER = "odpt.Calendar:Weekday"  # Weekday or SaturdayHoliday
 DIRECTION = "odpt.RailDirection:Inbound"  # Inbound or Outbound
@@ -29,10 +30,11 @@ STATIONS_NAME = [
 
 
 def get_train_timetable():
-    _res = requests.get(URL_TIMETABLE)
+    param = f"&odpt:calendar={CALENDER}&odpt:operator=odpt.Operator:JR-East&odpt:railDirection={DIRECTION}&odpt:railway=odpt.Railway:JR-East.ChuoRapid&odpt:station={STATION}"
+    _res = requests.get(URL_TIMETABLE + param)
     print(_res.status_code)
     _res = _res.json()
-    res = [x for x in _res if x["odpt:railway"] == RAILWAY]
+    res = _res[0]["odpt:stationTimetableObject"]
 
     timetables = dict()
 
@@ -41,19 +43,10 @@ def get_train_timetable():
         trainNumber = elem["odpt:trainNumber"]
         destination = elem["odpt:destinationStation"]
         trainType = elem["odpt:trainType"]
-
-        if CALENDER != elem["odpt:calendar"] or DIRECTION != elem["odpt:railDirection"]:
-            continue
-
-        for stop in elem["odpt:trainTimetableObject"]:
-            try:
-                if stop["odpt:departureStation"] == STATION:
-                    departureTime = stop["odpt:departureTime"]
-                    if departureTime < "04:00":  # 4:00以前の場合は24時間表記に変換
-                        departureTime = str(int(departureTime[:2])+24) + departureTime[2:]
-                    timetables[trainNumber] = [departureTime, train, trainType, destination[0]]
-            except:
-                pass
+        departureTime = elem["odpt:departureTime"]
+        if departureTime < "04:00":  # 4:00以前の場合は24時間表記に変換
+            departureTime = str(int(departureTime[:2])+24) + departureTime[2:]
+        timetables[trainNumber] = [departureTime, train, trainType, destination[0]]
 
     timetables = dict(sorted(timetables.items(), key=lambda x: x[1][0]))  # 時刻順に並び替え
     return timetables
@@ -72,10 +65,10 @@ def get_current_train_timetable(timetables, time: str):
 
 
 def get_train_position():
-    _res = requests.get(URL_POSITION)
+    param = "&odpt:operator=odpt.Operator:JR-East&odpt:railway=odpt.Railway:JR-East.ChuoRapid"
+    _res = requests.get(URL_POSITION + param)
     print(_res.status_code)
-    _res = _res.json()
-    res = [x for x in _res if x["odpt:railway"] == RAILWAY]
+    res = _res.json()
 
     positions = []
 
@@ -163,8 +156,7 @@ def main():
     timetables = get_train_timetable()
     from datetime import datetime
     now = datetime.now().strftime("%H:%M")
-
-    current_timetables, current_trainNumbers = get_current_train_timetable(timetables, "04:00")
+    current_timetables, current_trainNumbers = get_current_train_timetable(timetables, now)
     positions = get_train_position()
     latest_timetables = get_latest_train_list(timetables, current_timetables, current_trainNumbers, positions)
     print(latest_timetables)

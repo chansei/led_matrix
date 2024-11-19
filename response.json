@@ -1,0 +1,2088 @@
+[
+    {
+        "@id": "urn:ucode:_00001C00000000000001000003208219",
+        "@type": "odpt:StationTimetable",
+        "dc:date": "2024-08-29T15:00:00+09:00",
+        "@context": "http://vocab.odpt.org/context_odpt_StationTimetable.jsonld",
+        "dct:issued": "2024-03-16",
+        "owl:sameAs": "odpt.StationTimetable:JR-East.ChuoRapid.HigashiKoganei.Outbound.Weekday",
+        "odpt:railway": "odpt.Railway:JR-East.ChuoRapid",
+        "odpt:station": "odpt.Station:JR-East.ChuoRapid.HigashiKoganei",
+        "odpt:calendar": "odpt.Calendar:Weekday",
+        "odpt:operator": "odpt.Operator:JR-East",
+        "odpt:railDirection": "odpt.RailDirection:Outbound",
+        "odpt:stationTimetableObject": [
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.467T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "467T",
+                "odpt:departureTime": "04:44",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.423T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "423T",
+                "odpt:departureTime": "05:02",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.481T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "481T",
+                "odpt:departureTime": "05:16",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.433T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "433T",
+                "odpt:departureTime": "05:38",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.515H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "515H",
+                "odpt:departureTime": "05:54",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.593T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "593T",
+                "odpt:departureTime": "06:06",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.525T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "525T",
+                "odpt:departureTime": "06:22",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.571T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "571T",
+                "odpt:departureTime": "06:31",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.695T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "695T",
+                "odpt:departureTime": "06:46",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.663T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "663T",
+                "odpt:departureTime": "06:53",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.683T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "683T",
+                "odpt:departureTime": "07:02",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.679T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "679T",
+                "odpt:departureTime": "07:09",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.667T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "667T",
+                "odpt:departureTime": "07:16",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.697T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "697T",
+                "odpt:departureTime": "07:24",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.639T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "639T",
+                "odpt:departureTime": "07:29",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.611H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "611H",
+                "odpt:departureTime": "07:33",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.791T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "791T",
+                "odpt:departureTime": "07:38",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.781T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "781T",
+                "odpt:departureTime": "07:40",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Hachioji"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.723T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "723T",
+                "odpt:departureTime": "07:48",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.735T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "735T",
+                "odpt:departureTime": "07:54",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.773T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "773T",
+                "odpt:departureTime": "07:58",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.707H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "707H",
+                "odpt:departureTime": "08:02",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.785T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "785T",
+                "odpt:departureTime": "08:05",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.MusashiKoganei"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.737T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "737T",
+                "odpt:departureTime": "08:07",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.723H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "723H",
+                "odpt:departureTime": "08:10",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.729T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "729T",
+                "odpt:departureTime": "08:14",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.MusashiKoganei"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.749T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "749T",
+                "odpt:departureTime": "08:20",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.733T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "733T",
+                "odpt:departureTime": "08:24",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.799T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "799T",
+                "odpt:departureTime": "08:27",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.715H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "715H",
+                "odpt:departureTime": "08:29",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.759T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "759T",
+                "odpt:departureTime": "08:31",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.MusashiKoganei"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.743T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "743T",
+                "odpt:departureTime": "08:33",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.703H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "703H",
+                "odpt:departureTime": "08:36",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.801H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "801H",
+                "odpt:departureTime": "08:38",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.857T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "857T",
+                "odpt:departureTime": "08:41",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.887T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "887T",
+                "odpt:departureTime": "08:43",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.893T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "893T",
+                "odpt:departureTime": "08:45",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.869T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "869T",
+                "odpt:departureTime": "08:48",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.MusashiKoganei"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.817T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "817T",
+                "odpt:departureTime": "08:52",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.845T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "845T",
+                "odpt:departureTime": "08:55",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.MusashiKoganei"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.821T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "821T",
+                "odpt:departureTime": "08:57",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Tachikawa"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.819T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "819T",
+                "odpt:departureTime": "08:59",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.815T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "815T",
+                "odpt:departureTime": "09:01",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.825T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "825T",
+                "odpt:departureTime": "09:03",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.MusashiKoganei"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.819H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "819H",
+                "odpt:departureTime": "09:05",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.809H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "809H",
+                "odpt:departureTime": "09:07",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.871T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "871T",
+                "odpt:departureTime": "09:09",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.851T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "851T",
+                "odpt:departureTime": "09:11",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.MusashiKoganei"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.865T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "865T",
+                "odpt:departureTime": "09:13",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.821H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "821H",
+                "odpt:departureTime": "09:15",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.805H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "805H",
+                "odpt:departureTime": "09:17",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.895T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "895T",
+                "odpt:departureTime": "09:19",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.MusashiKoganei"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.853T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "853T",
+                "odpt:departureTime": "09:23",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.861T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "861T",
+                "odpt:departureTime": "09:25",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.813H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "813H",
+                "odpt:departureTime": "09:27",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.MusashiKoganei"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.863T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "863T",
+                "odpt:departureTime": "09:29",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.855T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "855T",
+                "odpt:departureTime": "09:31",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.831T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "831T",
+                "odpt:departureTime": "09:34",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.MusashiKoganei"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.877T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "877T",
+                "odpt:departureTime": "09:37",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Chuo.Otsuki"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.985T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "985T",
+                "odpt:departureTime": "09:40",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.983T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "983T",
+                "odpt:departureTime": "09:44",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.947T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "947T",
+                "odpt:departureTime": "09:46",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.929T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "929T",
+                "odpt:departureTime": "09:48",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.975T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "975T",
+                "odpt:departureTime": "09:53",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.941T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "941T",
+                "odpt:departureTime": "09:55",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.MusashiKoganei"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.927T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "927T",
+                "odpt:departureTime": "09:57",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.979T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "979T",
+                "odpt:departureTime": "09:59",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.997T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "997T",
+                "odpt:departureTime": "10:01",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.917H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "917H",
+                "odpt:departureTime": "10:03",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.911H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "911H",
+                "odpt:departureTime": "10:06",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.MusashiKoganei"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.959T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "959T",
+                "odpt:departureTime": "10:11",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.989T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "989T",
+                "odpt:departureTime": "10:15",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.MusashiKoganei"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.935T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "935T",
+                "odpt:departureTime": "10:19",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.991T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "991T",
+                "odpt:departureTime": "10:26",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.969T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "969T",
+                "odpt:departureTime": "10:28",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.967T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "967T",
+                "odpt:departureTime": "10:30",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.923T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "923T",
+                "odpt:departureTime": "10:32",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.973T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "973T",
+                "odpt:departureTime": "10:34",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.MusashiKoganei"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1039T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1039T",
+                "odpt:departureTime": "10:40",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1023H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1023H",
+                "odpt:departureTime": "10:49",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1049T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1049T",
+                "odpt:departureTime": "10:58",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1021T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1021T",
+                "odpt:departureTime": "11:02",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Tachikawa"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1099T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1099T",
+                "odpt:departureTime": "11:09",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1003H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1003H",
+                "odpt:departureTime": "11:12",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Tachikawa"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1017T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1017T",
+                "odpt:departureTime": "11:19",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1071T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1071T",
+                "odpt:departureTime": "11:29",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1043T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1043T",
+                "odpt:departureTime": "11:32",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1033T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1033T",
+                "odpt:departureTime": "11:34",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1119T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1119T",
+                "odpt:departureTime": "11:41",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1153T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1153T",
+                "odpt:departureTime": "11:49",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1157T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1157T",
+                "odpt:departureTime": "11:56",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1165T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1165T",
+                "odpt:departureTime": "12:03",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1183T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1183T",
+                "odpt:departureTime": "12:10",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1119H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1119H",
+                "odpt:departureTime": "12:17",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Hachioji"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1127T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1127T",
+                "odpt:departureTime": "12:24",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1105H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1105H",
+                "odpt:departureTime": "12:31",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1129T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1129T",
+                "odpt:departureTime": "12:38",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1269T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1269T",
+                "odpt:departureTime": "12:42",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1259T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1259T",
+                "odpt:departureTime": "12:49",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1291T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1291T",
+                "odpt:departureTime": "12:57",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1279T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1279T",
+                "odpt:departureTime": "13:02",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1239T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1239T",
+                "odpt:departureTime": "13:09",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1203H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1203H",
+                "odpt:departureTime": "13:18",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1277T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1277T",
+                "odpt:departureTime": "13:28",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1235T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1235T",
+                "odpt:departureTime": "13:32",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1299T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1299T",
+                "odpt:departureTime": "13:39",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1343T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1343T",
+                "odpt:departureTime": "13:43",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Tachikawa"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1349T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1349T",
+                "odpt:departureTime": "13:49",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1315H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1315H",
+                "odpt:departureTime": "13:54",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1371T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1371T",
+                "odpt:departureTime": "14:02",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1319T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1319T",
+                "odpt:departureTime": "14:10",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1321H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1321H",
+                "odpt:departureTime": "14:19",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1357T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1357T",
+                "odpt:departureTime": "14:27",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1317T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1317T",
+                "odpt:departureTime": "14:32",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1337T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1337T",
+                "odpt:departureTime": "14:41",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1405H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1405H",
+                "odpt:departureTime": "14:49",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1463T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1463T",
+                "odpt:departureTime": "14:57",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1465T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1465T",
+                "odpt:departureTime": "15:02",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1429T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1429T",
+                "odpt:departureTime": "15:09",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1491T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1491T",
+                "odpt:departureTime": "15:17",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1407H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1407H",
+                "odpt:departureTime": "15:24",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1483T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1483T",
+                "odpt:departureTime": "15:30",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1439T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1439T",
+                "odpt:departureTime": "15:34",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Hachioji"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1409H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1409H",
+                "odpt:departureTime": "15:40",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1543T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1543T",
+                "odpt:departureTime": "15:44",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1521T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1521T",
+                "odpt:departureTime": "15:50",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1569T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1569T",
+                "odpt:departureTime": "15:58",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.MusashiKoganei"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1579T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1579T",
+                "odpt:departureTime": "16:02",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Chuo.Otsuki"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1503H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1503H",
+                "odpt:departureTime": "16:09",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1571T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1571T",
+                "odpt:departureTime": "16:18",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1515H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1515H",
+                "odpt:departureTime": "16:27",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1519T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1519T",
+                "odpt:departureTime": "16:36",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Hachioji"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1635T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1635T",
+                "odpt:departureTime": "16:42",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1655T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1655T",
+                "odpt:departureTime": "16:48",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1649T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1649T",
+                "odpt:departureTime": "16:54",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1657T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1657T",
+                "odpt:departureTime": "16:59",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1617T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1617T",
+                "odpt:departureTime": "17:06",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1605H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1605H",
+                "odpt:departureTime": "17:10",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Hachioji"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1623H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1623H",
+                "odpt:departureTime": "17:13",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1619H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1619H",
+                "odpt:departureTime": "17:19",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1697T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1697T",
+                "odpt:departureTime": "17:25",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1665T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1665T",
+                "odpt:departureTime": "17:31",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1663T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1663T",
+                "odpt:departureTime": "17:34",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1789T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1789T",
+                "odpt:departureTime": "17:37",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.MusashiKoganei"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1783T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1783T",
+                "odpt:departureTime": "17:40",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1787T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1787T",
+                "odpt:departureTime": "17:43",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1791T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1791T",
+                "odpt:departureTime": "17:45",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Hachioji"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1737T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1737T",
+                "odpt:departureTime": "17:51",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1769T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1769T",
+                "odpt:departureTime": "17:58",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1731T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1731T",
+                "odpt:departureTime": "18:00",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.MusashiKoganei"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1781T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1781T",
+                "odpt:departureTime": "18:02",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1739T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1739T",
+                "odpt:departureTime": "18:08",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.MusashiKoganei"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1727T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1727T",
+                "odpt:departureTime": "18:10",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1709H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1709H",
+                "odpt:departureTime": "18:14",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1767T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1767T",
+                "odpt:departureTime": "18:16",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Chuo.Otsuki"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1729T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1729T",
+                "odpt:departureTime": "18:21",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1723T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1723T",
+                "odpt:departureTime": "18:24",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1725T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1725T",
+                "odpt:departureTime": "18:31",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1721T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1721T",
+                "odpt:departureTime": "18:33",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1747T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1747T",
+                "odpt:departureTime": "18:37",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.MusashiKoganei"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1895T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1895T",
+                "odpt:departureTime": "18:39",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1885T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1885T",
+                "odpt:departureTime": "18:46",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1899T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1899T",
+                "odpt:departureTime": "18:48",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.MusashiKoganei"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1875T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1875T",
+                "odpt:departureTime": "18:52",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1873T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1873T",
+                "odpt:departureTime": "18:54",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1853T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1853T",
+                "odpt:departureTime": "19:01",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1871T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1871T",
+                "odpt:departureTime": "19:03",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Tachikawa"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1861T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1861T",
+                "odpt:departureTime": "19:08",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1877T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1877T",
+                "odpt:departureTime": "19:14",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1855T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1855T",
+                "odpt:departureTime": "19:16",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1819T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1819T",
+                "odpt:departureTime": "19:22",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.MusashiKoganei"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1803H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1803H",
+                "odpt:departureTime": "19:24",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1817H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1817H",
+                "odpt:departureTime": "19:31",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1817T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1817T",
+                "odpt:departureTime": "19:33",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1857T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1857T",
+                "odpt:departureTime": "19:36",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1931T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1931T",
+                "odpt:departureTime": "19:43",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1905H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1905H",
+                "odpt:departureTime": "19:45",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1979T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1979T",
+                "odpt:departureTime": "19:52",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1935T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1935T",
+                "odpt:departureTime": "19:54",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Tachikawa"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1919H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1919H",
+                "odpt:departureTime": "20:01",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1997T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1997T",
+                "odpt:departureTime": "20:04",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1947T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1947T",
+                "odpt:departureTime": "20:11",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1963T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1963T",
+                "odpt:departureTime": "20:14",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1983T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1983T",
+                "odpt:departureTime": "20:20",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1991T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1991T",
+                "odpt:departureTime": "20:24",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1987T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1987T",
+                "odpt:departureTime": "20:31",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1999T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1999T",
+                "odpt:departureTime": "20:33",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Tachikawa"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.1965T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "1965T",
+                "odpt:departureTime": "20:38",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2041T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2041T",
+                "odpt:departureTime": "20:45",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2027T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2027T",
+                "odpt:departureTime": "20:47",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2029T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2029T",
+                "odpt:departureTime": "20:52",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2025T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2025T",
+                "odpt:departureTime": "20:55",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2095T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2095T",
+                "odpt:departureTime": "21:02",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2071T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2071T",
+                "odpt:departureTime": "21:10",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2093T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2093T",
+                "odpt:departureTime": "21:13",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2021H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2021H",
+                "odpt:departureTime": "21:21",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2043T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2043T",
+                "odpt:departureTime": "21:28",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2085T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2085T",
+                "odpt:departureTime": "21:32",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2053T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2053T",
+                "odpt:departureTime": "21:39",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2189T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2189T",
+                "odpt:departureTime": "21:43",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2121T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2121T",
+                "odpt:departureTime": "21:45",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Tachikawa"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2103H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2103H",
+                "odpt:departureTime": "21:53",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2177T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2177T",
+                "odpt:departureTime": "22:01",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2135T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2135T",
+                "odpt:departureTime": "22:05",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2167T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2167T",
+                "odpt:departureTime": "22:13",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2197T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2197T",
+                "odpt:departureTime": "22:15",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2117T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2117T",
+                "odpt:departureTime": "22:22",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2107H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2107H",
+                "odpt:departureTime": "22:30",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2199T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2199T",
+                "odpt:departureTime": "22:34",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2217H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2217H",
+                "odpt:departureTime": "22:41",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2247T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2247T",
+                "odpt:departureTime": "22:46",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2205H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2205H",
+                "odpt:departureTime": "22:52",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2287T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2287T",
+                "odpt:departureTime": "22:59",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2249T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2249T",
+                "odpt:departureTime": "23:05",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2281T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2281T",
+                "odpt:departureTime": "23:12",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2263T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2263T",
+                "odpt:departureTime": "23:16",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2233T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2233T",
+                "odpt:departureTime": "23:22",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2227T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2227T",
+                "odpt:departureTime": "23:30",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2295T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2295T",
+                "odpt:departureTime": "23:34",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2329T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2329T",
+                "odpt:departureTime": "23:40",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2369T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2369T",
+                "odpt:departureTime": "23:49",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2323H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2323H",
+                "odpt:departureTime": "23:56",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2341T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2341T",
+                "odpt:departureTime": "00:00",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2393T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2393T",
+                "odpt:departureTime": "00:08",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.Ome.Ome"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2323T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2323T",
+                "odpt:departureTime": "00:13",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2359T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2359T",
+                "odpt:departureTime": "00:17",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2337T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2337T",
+                "odpt:departureTime": "00:22",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Takao"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2389T",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2389T",
+                "odpt:departureTime": "00:27",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Tachikawa"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2303H",
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2303H",
+                "odpt:departureTime": "00:36",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.Toyoda"
+                ]
+            },
+            {
+                "odpt:train": "odpt.Train:JR-East.ChuoRapid.2435T",
+                "odpt:isLast": true,
+                "odpt:trainType": "odpt.TrainType:JR-East.Rapid",
+                "odpt:trainNumber": "2435T",
+                "odpt:departureTime": "00:44",
+                "odpt:destinationStation": [
+                    "odpt.Station:JR-East.ChuoRapid.MusashiKoganei"
+                ]
+            }
+        ]
+    }
+]
