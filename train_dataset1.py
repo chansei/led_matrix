@@ -68,7 +68,7 @@ response_json = response.json()
 
 positions = []
 for train_info in response_json:
-    if train_info["odpt:railDirection"] !=  direction or train_info["odpt:railway"] != line:
+    if train_info["odpt:railDirection"] != direction or train_info["odpt:railway"] != line:
         continue
 
     extracted_info = {
@@ -134,11 +134,11 @@ station_index = {station: idx for idx, station in enumerate(stations[:4])}
 for train_number in set_trainNumber:
     # 該当する列車情報を検索
     train_data = next((item for item in positions if item['odpt:trainNumber'] == train_number), None)
-    
+
     if train_data:
         from_station = train_data['odpt:fromStation']
         to_station = train_data['odpt:toStation']
-        
+
         # (A) fromStationまたはtoStationがstationsリストに含まれていない場合はNone
         if from_station not in station_index and to_station not in station_index:
             filtered_position[train_number] = None
