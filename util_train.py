@@ -1,5 +1,5 @@
-import urequests as requests
-# import requests
+# import urequests as requests
+import requests
 import json
 
 KEY = "bbmjpswmz5f1sgekikb41ei95lvaact4vbcb8mh6invm7ja8wr4j9g6psfyja9ly"
@@ -32,7 +32,7 @@ STATIONS_NAME = [
 def get_train_timetable():
     param = f"&odpt:calendar={CALENDER}&odpt:operator=odpt.Operator:JR-East&odpt:railDirection={DIRECTION}&odpt:railway=odpt.Railway:JR-East.ChuoRapid&odpt:station={STATION}"
     _res = requests.get(URL_TIMETABLE + param)
-    print(_res.status_code)
+    # print(_res.status_code)
     _res = _res.json()
     res = _res[0]["odpt:stationTimetableObject"]
 
@@ -67,7 +67,7 @@ def get_current_train_timetable(timetables, time: str):
 def get_train_position():
     param = "&odpt:operator=odpt.Operator:JR-East&odpt:railway=odpt.Railway:JR-East.ChuoRapid"
     _res = requests.get(URL_POSITION + param)
-    print(_res.status_code)
+    # print(_res.status_code)
     res = _res.json()
 
     positions = []
@@ -97,33 +97,40 @@ def get_train_position():
 def get_latest_train_list(timetables, current_timetables, current_trainNumbers, positions):
     # 時刻表+位置情報にもとづいて直近に発車する列車のリストを取得する関数
 
-    near_positions = [x for x in positions if x["odpt:fromStation"] in STATIONS[1:]]
+    near_positions = [x for x in positions if x["odpt:fromStation"] in STATIONS and x["odpt:toStation"] != "odpt.Station:JR-East.ChuoRapid.MusashiSakai"]
     near_positions = sorted(near_positions, key=lambda x: STATIONS.index(x["odpt:fromStation"]))  # 近い順にソート
+    # print("near_positions", near_positions)
     near_trainNumbers = [x["odpt:trainNumber"] for x in near_positions]
     # current_timetablesとnear_trainNumbersの和と差を取る
     _set_trainNumbers = list(set(current_trainNumbers) | set(near_trainNumbers))
-    _diff_trainNumbers = list(set(current_trainNumbers) - set(near_trainNumbers))
+    _diff_trainNumbers = list(set(near_trainNumbers) - set(current_trainNumbers))
+    # print("near_trainNumbers", near_trainNumbers, "current_trainNumbers", current_trainNumbers, "_diff_trainNumbers", _diff_trainNumbers)
     # diff_trainNumbersの時刻表情報をtimetableから抽出
     _diff_timetables = {key: timetables[key] for key in _diff_trainNumbers if key in timetables}
     # current_timetablesに追加
     current_timetables.update(_diff_timetables)
-    # current_timetablesをnear_trainNumbersの順に並び替える
-    # 元のcurrent_timetablesは時刻表通りに並んでいるはず
-    # near_trainNumbersに含まれる列車番号が先頭に来るように並び替える，それ以外は末尾にまとめる
-    latest_timetables = dict(sorted(current_timetables.items(), key=lambda x: x[0] not in near_trainNumbers))
-    # 前3件の遅れと接近情報を取得
+    # 遅れと接近情報を追加
     delays = get_train_delay(positions, _set_trainNumbers[:3])
+    carCompositions = get_train_carComposition(positions, _set_trainNumbers)
     approaches = get_train_approach(positions, _set_trainNumbers[:3])
     # 時刻表に遅れと接近情報を追加
-    for k, v in latest_timetables.items():
+    for k, v in current_timetables.items():
         v.append(delays.get(k, 0))
+        v.append(carCompositions.get(k, 10))
         v.append(approaches.get(k, None))
+    # 位置情報を優先して並び替え+残りは時刻表通り
+    latest_timetables = dict(sorted(current_timetables.items(), key=lambda x: (x[1][6] is None, x[1][6])))
     return latest_timetables
 
 
 def get_train_delay(positions, trainNumbers):
     # trainNumbersから遅れを取得
     return {item['odpt:trainNumber']: item['odpt:delay'] for item in positions if item['odpt:trainNumber'] in trainNumbers}
+
+
+def get_train_carComposition(positions, trainNumbers):
+    # trainNumbersから両数を取得
+    return {item['odpt:trainNumber']: item['odpt:carComposition'] for item in positions if item['odpt:trainNumber'] in trainNumbers}
 
 
 def get_train_approach(positions, trainNumbers):
@@ -152,23 +159,48 @@ def get_train_approach(positions, trainNumbers):
     return approachs
 
 
-def main():
+def get_latest_timetable(now: str):
     timetables = get_train_timetable()
-    from datetime import datetime
-    now = datetime.now().strftime("%H:%M")
     current_timetables, current_trainNumbers = get_current_train_timetable(timetables, now)
     positions = get_train_position()
     latest_timetables = get_latest_train_list(timetables, current_timetables, current_trainNumbers, positions)
-    print(latest_timetables)
+    return latest_timetables
 
+
+def main():
+    from datetime import datetime
     from itertools import islice
-    for train in dict(islice(latest_timetables.items(), 3)).values():
-        print(train[0], train[1].split(".")[-1], train[2].split(".")[-1], train[3].split(".")[-1], "遅れ"+str(train[4])+"分")
-        if train[5] is not None:
-            if train[5] % 2 == 0:
-                print(f"->{STATIONS_NAME[int(train[5]/2)]}駅に停車中です")
+    import time
+
+    # コンソールをクリア
+    print("\033[2J\033[0;0H")
+
+    # 30秒ごとに最新の時刻表を取得
+    while True:
+        print(datetime.now().strftime("%H:%M:%S"))
+        now = datetime.now().strftime("%H:%M")
+        latest_timetables = get_latest_timetable(now)
+        positions = []
+        for train in dict(islice(latest_timetables.items(), 3)).values():
+            print(train[0], train[1].split(".")[-1], train[2].split(".")[-1], train[3].split(".")[-1], "遅れ"+str(int(train[4]/60))+"分", str(train[5])+"両")
+            if train[6] is not None and train[6] < 7:
+                positions.append(train[6])
+        for i in range(0, 7):
+            if i % 2 == 1:
+                if i in positions:
+                    print("=■=", end="")
+                else:
+                    print("===", end="")
             else:
-                print(f"->{STATIONS_NAME[int((train[5]+1)/2)]}駅を発車しました")
+                if i in positions:
+                    print("□■□", end="")
+                else:
+                    print("□□□", end="")
+        print()
+        # 更新時間の表示
+        print("東小--武小--国分--西国")
+        print("\033[F" * 6, end="")
+        time.sleep(30)
 
 
 if __name__ == "__main__":
